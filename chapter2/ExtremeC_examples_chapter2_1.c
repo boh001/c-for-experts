@@ -1,9 +1,12 @@
 #include "ExtremeC_examples_chapter2_1.h"
+#include <stdio.h>
+#include <string.h>
 
 double avg(int* array, int length, average_type_t type) {
 	if (length <= 0 || type == NONE) {
 		return 0;
 	}
+	
 
 	double sum = 0.0;
 	for (int i = 0; i < length; i++) {
